@@ -1,1 +1,1 @@
-worker: python botmcdo.py
+worker: python Botmcdo.py
