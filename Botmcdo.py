@@ -7,9 +7,11 @@ from telegram.ext import (
 )
 
 # ==================== CONFIGURATION ====================
-BOT_TOKEN = "8643176773:AAFfN7IUIXWV6rpyknTk3LfTcsYXoK51tDU"
-ADMIN_ID = @zeerkay  # Mets ton ID Telegram ici (cherche @userinfobot)
-PAYPAL_EMAIL = "Kakuta13500@gmail.com"  # Mets ton PayPal ici
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+ADMIN_ID = int(os.environ.get("ADMIN_ID"))
+PAYPAL_EMAIL = os.environ.get("PAYPAL_EMAIL")
+
 
 # ==================== PRODUITS ====================
 PRODUITS_MCDO = [
